@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damingluo.github.io/"/>
-  <updated>2018-02-18T16:05:14.231Z</updated>
+  <updated>2018-02-18T16:17:25.290Z</updated>
   <id>https://damingluo.github.io/</id>
   
   <author>
@@ -17,11 +17,62 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>my first blog</title>
+    <link href="https://damingluo.github.io/2018/02/18/my-first-blog/"/>
+    <id>https://damingluo.github.io/2018/02/18/my-first-blog/</id>
+    <published>2018-02-18T12:25:47.374Z</published>
+    <updated>2018-02-18T16:17:25.290Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="博客搭建记（一）"><a href="#博客搭建记（一）" class="headerlink" title="博客搭建记（一）"></a>博客搭建记（一）</h1><p>搭建博客很久了，一直没有写自己的博客<br>今天终于有时间写博客了，准备先写下博客搭建过程<br>我使用的是hexo框架搭建的博客<br>在搭建博客之前需要先下载<br>1.<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a><br>2.<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a><br>下载好后你可以选择一个比较空余的的路径安装好</p><p>安装好git后打开gitbash<br>输入命令<br>— bash</p><h2 id="npm-install-g-hexo-cli"><a href="#npm-install-g-hexo-cli" class="headerlink" title="$ npm install -g hexo-cli"></a>$ npm install -g hexo-cli</h2><p>回车等待就安装好hexo框架了<br>紧接着就输入以下命令初始化hexo<br>— bash<br>$ hexo init &lt;文件夹&gt;<br>$ cd &lt;文件夹&gt;</p><h2 id="npm-install"><a href="#npm-install" class="headerlink" title="$ npm install"></a>$ npm install</h2><p>以及建议记住以下命令<br>— bash<br>cd 路径  打开相应路径<br>git init “文件夹名字”  新建一个文件夹</p><h2 id="git-clone-“仓库名”-把仓库克隆下来"><a href="#git-clone-“仓库名”-把仓库克隆下来" class="headerlink" title="git clone “仓库名”  把仓库克隆下来"></a>git clone “仓库名”  把仓库克隆下来</h2><h6 id="注：双引号不用输入"><a href="#注：双引号不用输入" class="headerlink" title="注：双引号不用输入"></a>注：双引号不用输入</h6><p>建议学会git命令可以通过以下方式学习</p><p>##书籍<br>1.Pro git<br>2.GitHub入门与实践</p><p>##网站<br>1.<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a><br>2.<a href="https://backlog.com/git-tutorial/cn/" target="_blank" rel="noopener">猴子都能懂的git入门</a><br>3.<a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="noopener">Try git</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;博客搭建记（一）&quot;&gt;&lt;a href=&quot;#博客搭建记（一）&quot; class=&quot;headerlink&quot; title=&quot;博客搭建记（一）&quot;&gt;&lt;/a&gt;博客搭建记（一）&lt;/h1&gt;&lt;p&gt;搭建博客很久了，一直没有写自己的博客&lt;br&gt;今天终于有时间写博客了，准备先写下博客搭建过程&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="博客搭建" scheme="https://damingluo.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="学习经验分享" scheme="https://damingluo.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用GitHub搭建属于我的博客</title>
+    <link href="https://damingluo.github.io/2018/02/07/%E5%88%A9%E7%94%A8GitHub%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://damingluo.github.io/2018/02/07/利用GitHub搭建属于我的博客/</id>
+    <published>2018-02-07T04:55:52.803Z</published>
+    <updated>2018-02-18T16:17:21.432Z</updated>
+    
+    <content type="html"><![CDATA[<p>寒假实在太无聊，于是逛各种网站偶然翻到一个搭建博客的网页，非常羡慕，于是我也动手去尝试了。文笔不好，大佬轻喷……</p><p>##准备行动<br>利用hexo搭建博客,那么hexo是什么呢？我不做过多详细介绍了，大家可以去阅读<a href="https://hexo.io/docs/" target="_blank" rel="noopener">官方文档</a><br>需要以下框架</p><p>###<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a></p><p>###<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a><br>关于node.js和git的相关介绍在他们的官网也有，我就不说废话了。</p><p>##开始搭建<br>tips：关于gitbash的默认位置建议大家修改下不用每次都要重新用cd命令选择路径<br>修改方法：<br>安装好git后打开gitbash<br>输入命令<br>— bash</p><h2 id="npm-install-g-hexo-cli"><a href="#npm-install-g-hexo-cli" class="headerlink" title="$ npm install -g hexo-cli"></a>$ npm install -g hexo-cli</h2><p>回车等待就安装好hexo框架了<br>紧接着就输入以下命令初始化hexo<br>— bash<br>$ hexo init &lt;文件夹&gt;<br>$ cd &lt;文件夹&gt;</p><h2 id="npm-install"><a href="#npm-install" class="headerlink" title="$ npm install"></a>$ npm install</h2><p>未完待续……</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;寒假实在太无聊，于是逛各种网站偶然翻到一个搭建博客的网页，非常羡慕，于是我也动手去尝试了。文笔不好，大佬轻喷……&lt;/p&gt;
+&lt;p&gt;##准备行动&lt;br&gt;利用hexo搭建博客,那么hexo是什么呢？我不做过多详细介绍了，大家可以去阅读&lt;a href=&quot;https://hexo.i
+      
+    
+    </summary>
+    
+      <category term="blog" scheme="https://damingluo.github.io/categories/blog/"/>
+    
+    
+      <category term="利用hexo搭建博客" scheme="https://damingluo.github.io/tags/%E5%88%A9%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello world</title>
     <link href="https://damingluo.github.io/2018/01/31/hello-world/"/>
     <id>https://damingluo.github.io/2018/01/31/hello-world/</id>
     <published>2018-01-31T12:31:50.669Z</published>
-    <updated>2018-02-18T16:05:14.231Z</updated>
+    <updated>2018-02-18T16:17:23.681Z</updated>
     
     <content type="html"><![CDATA[<p>欢迎来到我的<a href="DAMINGLUO.github.io">blog</a>，这是我第一次建立一个属于自己的网站，作为一个技术渣，目前技术不成熟，对于博客方面不了解，在这几天看各位大佬的文档才一步步建立起这个网站，还有很多地方没有配置好，后面再慢慢改吧，也欢迎大家指出问题！</p>]]></content>
     
