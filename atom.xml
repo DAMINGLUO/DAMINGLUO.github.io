@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damingluo.github.io/"/>
-  <updated>2018-02-06T16:30:30.022Z</updated>
+  <updated>2018-02-18T15:59:40.136Z</updated>
   <id>https://damingluo.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://damingluo.github.io/2018/01/31/hello-world/"/>
     <id>https://damingluo.github.io/2018/01/31/hello-world/</id>
     <published>2018-01-31T12:31:50.669Z</published>
-    <updated>2018-02-06T16:30:30.022Z</updated>
+    <updated>2018-02-18T15:59:40.136Z</updated>
     
     <content type="html"><![CDATA[<p>欢迎来到我的<a href="DAMINGLUO.github.io">blog</a>，这是我第一次建立一个属于自己的网站，作为一个技术渣，目前技术不成熟，对于博客方面不了解，在这几天看各位大佬的文档才一步步建立起这个网站，还有很多地方没有配置好，后面再慢慢改吧，也欢迎大家指出问题！</p>]]></content>
     
@@ -34,6 +34,10 @@
     
     </summary>
     
+      <category term="/学习经验分享/" scheme="https://damingluo.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="/博客搭建/" scheme="https://damingluo.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
