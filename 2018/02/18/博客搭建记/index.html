@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>博客搭建记（一） | dominick | 努力实现儿时的梦想</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#03A9F4">
+    
+    
+    <meta name="keywords" content="博客搭建,利用hexo和git pages建站">
+    <meta name="description" content="搭建博客很久了，一直没有写自己的博客，今天终于有时间写博客了，准备先写下博客搭建过程。我使用的是Hexo框架搭建的博客，利用Hexo搭建博客,那么Hexo是什么呢？我不做过多详细介绍了，文末有相关文档网站阅读 准备行动安装git并配置 下载并安装对应系统版本的git，当你安装好后桌面会有个Git bush 如果你已经熟悉Git和GitHub了并且配置好了SSH key，请直接看下一步。 如果你不清">
+<meta name="keywords" content="博客搭建,利用hexo和git pages建站">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建记（一）">
+<meta property="og:url" content="https://damingluo.github.io/2018/02/18/博客搭建记/index.html">
+<meta property="og:site_name" content="dominick">
+<meta property="og:description" content="搭建博客很久了，一直没有写自己的博客，今天终于有时间写博客了，准备先写下博客搭建过程。我使用的是Hexo框架搭建的博客，利用Hexo搭建博客,那么Hexo是什么呢？我不做过多详细介绍了，文末有相关文档网站阅读 准备行动安装git并配置 下载并安装对应系统版本的git，当你安装好后桌面会有个Git bush 如果你已经熟悉Git和GitHub了并且配置好了SSH key，请直接看下一步。 如果你不清">
+<meta property="og:image" content="https://damingluo.github.io/2018/02/18/博客搭建记/img/img.jpg">
+<meta property="og:updated_time" content="2018-02-20T15:28:18.010Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博客搭建记（一）">
+<meta name="twitter:description" content="搭建博客很久了，一直没有写自己的博客，今天终于有时间写博客了，准备先写下博客搭建过程。我使用的是Hexo框架搭建的博客，利用Hexo搭建博客,那么Hexo是什么呢？我不做过多详细介绍了，文末有相关文档网站阅读 准备行动安装git并配置 下载并安装对应系统版本的git，当你安装好后桌面会有个Git bush 如果你已经熟悉Git和GitHub了并且配置好了SSH key，请直接看下一步。 如果你不清">
+<meta name="twitter:image" content="https://damingluo.github.io/2018/02/18/博客搭建记/img/img.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="dominick" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.13">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">dominick</h5>
+          <a href="mailto:highbright@dingtalk.com" title="highbright@dingtalk.com" class="mail">highbright@dingtalk.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/DAMINGLUO" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">博客搭建记（一）</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">博客搭建记（一）</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-02-18T12:25:47.374Z" itemprop="datePublished" class="page-time">
+  2018-02-18
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/建站/">建站</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#准备行动"><span class="post-toc-number">1.</span> <span class="post-toc-text">准备行动</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装git并配置"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">安装git并配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#下载安装Node-js"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">下载安装Node.js</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装Hexo"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">安装Hexo</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开始搭建"><span class="post-toc-number">2.</span> <span class="post-toc-text">开始搭建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置网站"><span class="post-toc-number">3.</span> <span class="post-toc-text">配置网站</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#打开网站"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">打开网站</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#帮助你深入了解的相关方式"><span class="post-toc-number">4.</span> <span class="post-toc-text">帮助你深入了解的相关方式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文档"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">文档</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#书籍"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">书籍</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#网站"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">网站</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-博客搭建记"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">博客搭建记（一）</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-18 20:25:47" datetime="2018-02-18T12:25:47.374Z"  itemprop="datePublished">2018-02-18</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/建站/">建站</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>搭建博客很久了，一直没有写自己的博客，今天终于有时间写博客了，准备先写下博客搭建过程。我使用的是Hexo框架搭建的博客，利用Hexo搭建博客,那么Hexo是什么呢？我不做过多详细介绍了，文末有相关文档网站阅读</p>
+<h2 id="准备行动"><a href="#准备行动" class="headerlink" title="准备行动"></a>准备行动</h2><h3 id="安装git并配置"><a href="#安装git并配置" class="headerlink" title="安装git并配置"></a>安装git并配置</h3><ul>
+<li>下载并安装对应系统版本的<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>，当你安装好后桌面会有个Git bush</li>
+<li>如果你已经熟悉Git和GitHub了并且配置好了SSH key，请直接看下一步。</li>
+<li>如果你不清楚Git，不用担心，文末有相关文档网址，你可以先学习下Git</li>
+<li>如果你没有GitHub账户，点击<a href="https://github.com" target="_blank" rel="noopener">这里</a>注册你的Github账号。<br>点击[这里]（<a href="http://blog.csdn.net/tanzhengyu/article/details/51064380）学习创建SSH" target="_blank" rel="noopener">http://blog.csdn.net/tanzhengyu/article/details/51064380）学习创建SSH</a> key配置GitHub</li>
+</ul>
+<h3 id="下载安装Node-js"><a href="#下载安装Node-js" class="headerlink" title="下载安装Node.js"></a>下载安装Node.js</h3><p>点击<a href="https://nodejs.org/en/" target="_blank" rel="noopener">这里</a>下载好，建议你选择一个比较空余的的路径安装好</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>打开Git bash<br>输入命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>回车等待，紧接着就输入以下命令初始化hexo</p>
+<h2 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h2><p>安装好git后打开gitbash，输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>接着在命令行输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init 文件夹</span><br><span class="line">$ <span class="built_in">cd</span> 文件夹</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
+<p>把上面的”文件夹”替换成你想好的目录名字，比如我的是目录名字为hexo，Hexo将会在hexo文件夹中新建所需要的文件。<br>cd命令代表打开路径，比如我想打开E盘的hexo目录就在Git bash命令行输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> e:/hexo</span><br></pre></td></tr></table></figure></p>
+<p>就进入E盘的hexo文件夹里了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">耐心等待会，你可以在相应的目录看到以下结构</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<p>多出一些目录也不必担心，影响不大</p>
+<h2 id="配置网站"><a href="#配置网站" class="headerlink" title="配置网站"></a>配置网站</h2><h3 id="打开网站"><a href="#打开网站" class="headerlink" title="打开网站"></a>打开网站</h3><p>其实现在我们就可以打开网站看看了<br>输入以下命令启动Hexo服务：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> 文件夹目录</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
+<p>之后你可以通过浏览器访问localhost:4000看到博客网站的主页<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="img/img.jpg" alt="img" title="">
+                </div>
+                <div class="image-caption">img</div>
+            </figure></p>
+<h2 id="帮助你深入了解的相关方式"><a href="#帮助你深入了解的相关方式" class="headerlink" title="帮助你深入了解的相关方式"></a>帮助你深入了解的相关方式</h2><h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>1.[hexo]（<a href="https://hexo.io/zh-cn/docs/index.html）" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/index.html）</a><br>2.<a href="https://github.com/yscoder/hexo-theme-indigo/wiki" target="_blank" rel="noopener">indigo</a><br>这个是indigo主题的网址，你可以在这里找到很多的拓展和常见问题的处理方法。</p>
+<h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><p>1.Pro git<br>没看过，但好像还不错有PDF版，附上网址，点击<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">这里</a>。<br>2.GitHub入门与实践<br>经久不衰的GitHub入门书籍，墙裂推荐。</p>
+<h3 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h3><p>1.<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a><br>学习git的快速入门网站，里面挺多git干货。<br>2.<a href="https://backlog.com/git-tutorial/cn/" target="_blank" rel="noopener">猴子都能懂的git入门</a><br>看名字我就想推荐，哈哈哈。<br>3.<a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="noopener">Try git</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-02-20T15:28:18.010Z" itemprop="dateUpdated">2018-02-20 23:28:18</time>
+</span><br>
+
+
+        
+        转载请与我联系并注明出处<a href="/2018/02/18/博客搭建记/" target="_blank" rel="external">https://damingluo.github.io/2018/02/18/博客搭建记/</a>
+        
+    </div>
+    <footer>
+        <a href="https://damingluo.github.io">
+            <img src="/img/avatar.jpg" alt="dominick">
+            dominick
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/利用hexo和git-pages建站/">利用hexo和git pages建站</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://damingluo.github.io/2018/02/18/博客搭建记/&title=《博客搭建记（一）》 — dominick&pic=https://damingluo.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://damingluo.github.io/2018/02/18/博客搭建记/&title=《博客搭建记（一）》 — dominick&source=PROTECT I'M A BOY" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://damingluo.github.io/2018/02/18/博客搭建记/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《博客搭建记（一）》 — dominick&url=https://damingluo.github.io/2018/02/18/博客搭建记/&via=https://damingluo.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://damingluo.github.io/2018/02/18/博客搭建记/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/01/31/hello-world/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hello world</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢投食~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/alipay.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>dominick &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://damingluo.github.io/2018/02/18/博客搭建记/&title=《博客搭建记（一）》 — dominick&pic=https://damingluo.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://damingluo.github.io/2018/02/18/博客搭建记/&title=《博客搭建记（一）》 — dominick&source=PROTECT I'M A BOY" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://damingluo.github.io/2018/02/18/博客搭建记/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《博客搭建记（一）》 — dominick&url=https://damingluo.github.io/2018/02/18/博客搭建记/&via=https://damingluo.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://damingluo.github.io/2018/02/18/博客搭建记/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNElEQVR42u3ay47iQAwF0P7/n2a2Lc0kXNthJFynVghCqMPCKT9+fuL1+rUm19xfmd+huTAwML6W8bpdv6/5+1vJ6/vt3l+f7A0DA+McxlUEu//h5NM8pCZ/3+X7GBgYGINA3AusGBgYGD1GclzrgZPfxcDAwEg28VSCWg24D+fiGBgYX8jIq+7///VH+hsYGBhfxXi1Vq8NOUl93+wHAwNjNWPejHw2TPeKdBgYGLsZebsxaTrm4XgycPYm1GJgYCxlVG9dDZfz5mX0xMDAwFjKqKaXzYA4HsKIHgAYGBhLGYVRhkHbMklxq4fOKInFwMBYxKgmopMSW6+c9+ZKDAyM1YzqEXAywpWkyuXEFQMD4wBGtZSfh8W8DVBNm9+ccDEwMA5jTIYw8s3lLdLLcI+BgbGakRT3k0Q3KeJXg3V17AMDA+MERvKF6mBEAvtEywEDA2MTIz+W5SluPv9QHUq7xGBgYKxmTI5on6jJj4bDMDAwljKqB7iklJaH7yr+8v4YGBirGdXWY7WF8Fj5rDcQhoGBsYKRbK46HlEtnPUaqP8ot2FgYCxlVNuN1cCah9HHnhsYGBjrGL0Bi7wwN0lfC20DDAyM1YxqWEwOiPmmJ4U2DAyM0xhJkK2+n8N6Abr89MDAwFjBSI53vbGt3ojGqD2AgYFxMGPSJJiswtEQAwPjeEZvwqEavpvlNgwMjAMYk2LZvOU5CegYGBgnMKojEb3C/X2ymjdKR0MeGBgY38f4A5SA60HSTRljAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.13"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.13" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
