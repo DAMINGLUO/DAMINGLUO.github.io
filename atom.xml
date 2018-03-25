@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damingluo.github.io/"/>
-  <updated>2018-02-23T16:34:31.250Z</updated>
+  <updated>2018-03-25T10:48:53.845Z</updated>
   <id>https://damingluo.github.io/</id>
   
   <author>
@@ -21,19 +21,16 @@
     <link href="https://damingluo.github.io/2018/02/21/markdown%E8%AF%AD%E6%B3%95/"/>
     <id>https://damingluo.github.io/2018/02/21/markdown语法/</id>
     <published>2018-02-20T23:12:11.655Z</published>
-    <updated>2018-02-23T16:34:31.250Z</updated>
+    <updated>2018-03-25T10:48:53.845Z</updated>
     
-    <content type="html"><![CDATA[<p>哈哈哈<br><strong>hhh</strong></p><p><em>hhh</em></p><p><del>hhh</del></p><p>==hhh==</p><h1 id="hhh"><a href="#hhh" class="headerlink" title="hhh"></a>hhh</h1><h2 id="hhh-1"><a href="#hhh-1" class="headerlink" title="hhh"></a>hhh</h2><h3 id="hhh-2"><a href="#hhh-2" class="headerlink" title="hhh"></a>hhh</h3><h4 id="hhh-3"><a href="#hhh-3" class="headerlink" title="hhh"></a>hhh</h4><h5 id="hhh-4"><a href="#hhh-4" class="headerlink" title="hhh"></a>hhh</h5><h6 id="hhh-5"><a href="#hhh-5" class="headerlink" title="hhh"></a>hhh</h6><hr><p>hhh</p><blockquote><p>hhh</p></blockquote><ul><li>1</li><li>2</li><li>3</li></ul><ol><li>hhh</li><li>hhh</li><li>hhh</li></ol><ul><li>[ ] hhhh</li><li>[ ] hhhh</li><li>[x] hhh</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hhhhghgvg</span><br><span class="line"><span class="comment"># hhh</span></span><br><span class="line">nishishabima</span><br><span class="line">woyebuzhidaoa ndcsdcfhasbcf</span><br></pre></td></tr></table></figure><html><br><!--在这里插入内容--><br></html><table><thead><tr><th>header 1</th><th>header 2</th></tr></thead><tbody><tr><td>row 1 col 1</td><td>row 1 col 2</td></tr><tr><td>row 2 col 1</td><td>row 2 col 2</td></tr></tbody></table><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E = mc^2</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A--&gt;B</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">A-&gt;&gt;B: How are you?</span><br><span class="line">B-&gt;&gt;A: Great!</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">section S1</span><br><span class="line">T1: 2014-01-01, 9d</span><br><span class="line">section S2</span><br><span class="line">T2: 2014-01-11, 9d</span><br><span class="line">section S3</span><br><span class="line">T3: 2014-01-02, 9d</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>博客是搭建好了，那么博客怎么写呢？<br>今天介绍下博客的写法，hexo博客是通过Markdown语法写的。大家听到语法可能会想到被英语支配的恐惧哈哈，但是大家不用担心，Markdown语法只有寥寥数个语法，包你十分钟内学会。</p><p>#什么是Markdown<br>首先我们需要了解下Markdown是啥<br>Markdown是一种用于</p><p>哈哈哈<br><strong>hhh</strong></p><p><em>hhh</em></p><p><del>hhh</del></p><p>==hhh==</p><h1 id="hhh"><a href="#hhh" class="headerlink" title="hhh"></a>hhh</h1><h2 id="hhh-1"><a href="#hhh-1" class="headerlink" title="hhh"></a>hhh</h2><h3 id="hhh-2"><a href="#hhh-2" class="headerlink" title="hhh"></a>hhh</h3><h4 id="hhh-3"><a href="#hhh-3" class="headerlink" title="hhh"></a>hhh</h4><h5 id="hhh-4"><a href="#hhh-4" class="headerlink" title="hhh"></a>hhh</h5><h6 id="hhh-5"><a href="#hhh-5" class="headerlink" title="hhh"></a>hhh</h6><hr><p>hhh</p><blockquote><p>hhh</p></blockquote><ul><li>hhhh</li><li>hhhhh</li><li>hhhhhh</li></ul><ol><li>hhh</li><li>hhh</li><li>hhh</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hhh</span></span><br><span class="line">somethingforthis</span><br></pre></td></tr></table></figure><html><br><!--<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=2299c7e5b80f24433012100a3a3a595de5c3968d74571ca158cb328ba02359e3"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="挨踢的窝" title="挨踢的窝"></a>--><br></html><table><thead><tr><th>header 1</th><th>header 2</th></tr></thead><tbody><tr><td>row 1 col 1</td><td>row 1 col 2</td></tr><tr><td>row 2 col 1</td><td>row 2 col 2</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;哈哈哈&lt;br&gt;&lt;strong&gt;hhh&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;hhh&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;hhh&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;==hhh==&lt;/p&gt;
-&lt;h1 id=&quot;hhh&quot;&gt;&lt;a href=&quot;#hhh&quot; class=&quot;headerlink&quot; t
+        &lt;p&gt;博客是搭建好了，那么博客怎么写呢？&lt;br&gt;今天介绍下博客的写法，hexo博客是通过Markdown语法写的。大家听到语法可能会想到被英语支配的恐惧哈哈，但是大家不用担心，Markdown语法只有寥寥数个语法，包你十分钟内学会。&lt;/p&gt;
+&lt;p&gt;#什么是Markdown&lt;br&gt;
       
     
     </summary>
@@ -78,15 +75,15 @@
     <link href="https://damingluo.github.io/2018/01/31/hello-world/"/>
     <id>https://damingluo.github.io/2018/01/31/hello-world/</id>
     <published>2018-01-31T12:31:50.669Z</published>
-    <updated>2018-02-20T21:01:35.214Z</updated>
+    <updated>2018-03-25T10:37:07.072Z</updated>
     
-    <content type="html"><![CDATA[<p>亲爱的朋友，欢迎来到我的博客，这是我第一次建立一个属于自己的网站，作为一个技术渣，目前技术不成熟，对于博客方面不了解，在这几天看各位大佬以及官方的文档才一步步建立起这个网站，还有很多地方没有配置好，后面再慢慢改吧，也欢迎大家指出问题，谢谢！</p>]]></content>
+    <content type="html"><![CDATA[<p>亲爱的朋友，欢迎来到我的博客，这是我第一次建立一个属于自己的网站，作为一个技术渣，目前个人技术不成熟，对于博客方面不是特别了解，在这几天看各位大佬以及官方的文档才一步步建立起这个网站，还有很多地方没有配置好，后面再慢慢改吧，也欢迎大家指出问题，谢谢！</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;亲爱的朋友，欢迎来到我的博客，这是我第一次建立一个属于自己的网站，作为一个技术渣，目前技术不成熟，对于博客方面不了解，在这几天看各位大佬以及官方的文档才一步步建立起这个网站，还有很多地方没有配置好，后面再慢慢改吧，也欢迎大家指出问题，谢谢！&lt;/p&gt;
+        &lt;p&gt;亲爱的朋友，欢迎来到我的博客，这是我第一次建立一个属于自己的网站，作为一个技术渣，目前个人技术不成熟，对于博客方面不是特别了解，在这几天看各位大佬以及官方的文档才一步步建立起这个网站，还有很多地方没有配置好，后面再慢慢改吧，也欢迎大家指出问题，谢谢！&lt;/p&gt;
 
       
     
